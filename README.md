@@ -7,10 +7,33 @@ This project aims to analyze heart disease data using Power BI. It includes data
 ## 🗃️ Data Preprocessing
 ### **Modifications Made to the Dataset:**
 - **Replaced numerical values with categorical labels** for better understanding:
-  - `cp` (Chest Pain Type): Converted 0-3 into descriptive labels.
-  - `sex`: Converted 0 = Female, 1 = Male.
-  - `fbs`: 0 = Normal, 1 = High Blood Sugar.
-  - `restecg`, `slope`, `thal`: Labeled categories.
+  - `cp` (Chest Pain Type):
+    - 0 → Typical Angina
+    - 1 → Atypical Angina
+    - 2 → Non-anginal Pain
+    - 3 → Asymptomatic
+  - `sex`:
+    - 0 → Female
+    - 1 → Male
+  - `fbs` (Fasting Blood Sugar):
+    - 0 → Normal
+    - 1 → High Blood Sugar
+  - `restecg` (Resting ECG Results):
+    - 0 → Normal
+    - 1 → ST-T Wave Abnormality
+    - 2 → Left Ventricular Hypertrophy
+  - `slope` (ST Segment Slope):
+    - 0 → Upsloping
+    - 1 → Flat
+    - 2 → Downsloping
+  - `thal` (Thalassemia Type):
+    - 0 → Normal
+    - 1 → Fixed Defect
+    - 2 → Reversible Defect
+  - `exang` (Exercise-Induced Angina):
+    - 0 → No
+    - 1 → Yes
+
 - **Cleaned missing values** and ensured all data types were correctly formatted.
 
 ---
