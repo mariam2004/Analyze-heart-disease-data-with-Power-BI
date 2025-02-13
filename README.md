@@ -39,27 +39,32 @@ This project aims to analyze heart disease data using Power BI. It includes data
 ---
 ## 📊 Visualizations & Insights
 ### **1. Overview Page**
-**Columns Used:** `age`, `sex`, `target`
-- **Key Metrics:**
-  - Total number of patients
-  - Percentage of patients with heart disease
-  - Average age of patients
-- **Charts:**
-  - **Pie Chart**: Gender distribution
-  - **Bar Chart**: Age group distribution
+
+- Total number of patients (Card)
+- Percentage of people with heart disease (Card)
+- Average age of patients (Card)
+- **Donut chart** to illustrate gender distribution (male/female)
+- **Bar chart** showing the distribution of patients by age groups
+- **Pie chart** showing the relationship between ST slope and risk of heart disease
+- **Line column** chart analyzing ST wave regression and its effect on the disease
+- **Ribbon chart** comparing the effect of gender on the incidence rate
 
 ### **2. Analysis of Disease Factors**
-**Columns Used:** `cp`, `fbs`, `restecg`, `thalach`, `chol`, `trestbps`, `slope`
-- **Bar Chart**: Chest Pain Type vs. Disease presence
-- **Line Chart**: Heart Rate vs. Disease
-- **Stacked Bar Chart**: Blood Sugar Levels vs. Disease
-- **Heatmap**: Cholesterol & Blood Pressure impact
+
+- **Area chart**: showing the relationship between chest pain type and disease incidence
+- **Line Chart**: showing heart rate correlation with disease
+- **Column chart**:  ECG type and its link to disease presence
+- **Heatmap**:  showing the connection between cholesterol, blood pressure, and heart disease
+- **Card** displaying the Male-to-Female ratio
 
 ### **3. Detailed Patient Analysis**
-**Columns Used:** `slope`, `ca`, `thal`, `exang`
-- **Stacked Bar Chart**: ECG Type vs. Disease
-- **Horizontal Bar Chart**: ST Slope impact
-- **Scatter Plot**: Age vs. Cholesterol impact
+
+- **Scatter chart**: showing age vs. cholesterol impact on disease
+- **Donut chart**: showing high vs. normal blood sugar proportion
+- **Card**:for Heart Risk Score analysis
+- **Column chart**: of ST wave regression effect on disease
+- **Column chart**: of exercise-induced angina and heart disease link
+- **Table**: for high-risk patient identification
 
 ### **4. Interactive Dashboard**
 - **Slicers:** Gender, Age Group, Blood Sugar, Chest Pain Type
@@ -69,12 +74,11 @@ This project aims to analyze heart disease data using Power BI. It includes data
 ---
 ## 📏 DAX Measures Used
 - **Heart_Risk_Score**: Custom metric to highlight high-risk patients.
-- **Conditional Formatting**:
-  - Colored `age` based on risk level.
-  - Applied alert system for high cholesterol & heart rate.
-- **KPIs:**
-  - High-risk patient percentage
-  - Average cholesterol of heart disease patients
+- Percentage of Patients with Heart Disease
+- Average Age Calculation
+- Categorical Counts for Different Risk Factors
+- High-risk patient percentage
+- Average cholesterol of heart disease patients
 
 ---
 ## 🚀 Summary
